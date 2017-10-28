@@ -1,0 +1,49 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    color: red;
+}
+
+.col,
+[class^="col-"] {
+    display: flex;
+    flex: 1;
+}
+
+@for $i from 1 through 12 {
+	.col-#{$i} {
+		flex-basis: percentage($i/12);
+	}
+}
+
+@media (min-width: $sm) {
+    @for $i from 1 through 12 {
+        .-sm-#{$i} {
+            flex-basis: percentage($i/12);
+        }
+    }
+}
+
+@media (min-width: $md) {
+     @for $i from 1 through 12 {
+        .-md-#{$i} {
+            flex-basis: percentage($i/12);
+        }
+    }
+}
+
+@media (min-width: $lg) {
+     @for $i from 1 through 12 {
+        .-lg-#{$i} {
+            flex-basis: percentage($i/12);
+        }
+    }
+}
+
+@media (min-width: $xl) {
+     @for $i from 1 through 12 {
+        .-xl-#{$i} {
+            flex-basis: percentage($i/12);
+        }
+    }
+}
