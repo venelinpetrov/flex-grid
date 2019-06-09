@@ -1,1 +1,1 @@
-# Flex box grid framework
+# Mini flex box grid framework
