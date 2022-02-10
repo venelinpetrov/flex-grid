@@ -16,6 +16,6 @@
   "devDependencies": {
     "concurrently": "^3.5.0",
     "http-server": "^0.10.0",
-    "node-sass": "^4.5.3"
+    "node-sass": "^7.0.0"
   }
 }
